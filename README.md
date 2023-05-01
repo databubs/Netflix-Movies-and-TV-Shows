@@ -44,4 +44,10 @@ table(netflix$type)
    6131    2676 
 ```
 
+# Share
 
+What we currently have right now. More is coming!
+
+![alt text](https://github.com/databubs/Netflix-Movies-and-TV-Shows/blob/main/Release_Year.png)
+
+![alt text](https://github.com/databubs/Netflix-Movies-and-TV-Shows/blob/main/TopCountries.png)
