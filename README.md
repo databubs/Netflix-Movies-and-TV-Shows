@@ -1,5 +1,6 @@
 # Introduction
-Hey its Bobby and in this case study I will be focusing on visualizations briefly explaining my thought process while doing this using R Studio
+Hey its Bobby and in this case study I will be focusing on visualizations briefly explaining my thought process while doing this using R Studio. You can follow me step by step :)
+If you have any questions feel free to contact me at CHIENG@LIVE.CA
 
 ## Interesting Task Ideas - Suggestions from Kaggle
 
@@ -15,7 +16,7 @@ Does Netflix has more focus on TV Shows than movies in recent years.
 # Process Data
 [Netflix/TV Shows Data set](https://www.kaggle.com/datasets/shivamb/netflix-shows) 
 
-1. Read CSV file into R Studio.
+1. Read CSV file into R Studio. **Your file location has a different name than mine**
 ```r
 netflix_data <- read.csv("C:/Users/Bobby/Desktop/Netflix_Dataset/netflix_titles.csv")
 ```
