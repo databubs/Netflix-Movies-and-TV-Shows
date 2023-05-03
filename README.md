@@ -46,11 +46,14 @@ table(netflix$type)
 
 # Cleaning Data
 
-In order to summarize everything we would need to remove any values or variables that doesn't relate to this dataset
+Lets check out our Netflix_Data collums and which collums do we not need?
+
+```r
 ls(netflix_data)
  [1] "cast"         "country"      "date_added"   "description" 
  [5] "director"     "duration"     "listed_in"    "rating"      
  [9] "release_year" "show_id"      "title"        "type"      
+ ```
 
 
 
