@@ -46,7 +46,7 @@ table(netflix$type)
 
 # Cleaning Data
 
-Lets check out our Netflix_Data collums and which collums do we not need?
+Lets check out our Netflix_Data collums and which ones are relevant or not.
 
 ```r
 ls(netflix_data)
@@ -54,6 +54,11 @@ ls(netflix_data)
  [5] "director"     "duration"     "listed_in"    "rating"      
  [9] "release_year" "show_id"      "title"        "type"      
  ```
+ 
+I will be removing "show_ID, and "description to make our anaylsis more simple to understand
+```r
+netflix_data <- select(netflix_data, -show_id, -description)
+```
 
 
 
