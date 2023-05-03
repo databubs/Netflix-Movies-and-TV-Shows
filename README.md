@@ -44,6 +44,18 @@ table(netflix$type)
    6131    2676 
 ```
 
+# Cleaning Data
+
+In order to summarize everything we would need to remove any values or variables that doesn't relate to this dataset
+ls(netflix_data)
+ [1] "cast"         "country"      "date_added"   "description" 
+ [5] "director"     "duration"     "listed_in"    "rating"      
+ [9] "release_year" "show_id"      "title"        "type"      
+
+
+
+
+
 # Share
 
 What we currently have right now. More is coming!
