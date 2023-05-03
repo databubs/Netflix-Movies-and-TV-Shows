@@ -4,11 +4,9 @@ If you have any questions feel free to contact me at CHIENG@LIVE.CA
 
 ## Interesting Task Ideas - Suggestions from Kaggle
 
-Understanding what content is available in different countries
+Understanding what content is available in different countries.
 
-Identifying similar content by matching text-based features
-
-Network analysis of Actors / Directors and find interesting insights
+Network analysis of Actors / Directors and find interesting insights.
 
 Does Netflix has more focus on TV Shows than movies in recent years.
 
