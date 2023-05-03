@@ -15,9 +15,9 @@ Does Netflix has more focus on TV Shows than movies in recent years.
 # Process Data
 [Netflix/TV Shows Data set](https://www.kaggle.com/datasets/shivamb/netflix-shows) 
 
-1. Upload CSV file into R Studio.
+1. Read CSV file into R Studio.
 ```r
-netflix <- read.csv("netflix_titles.csv", header = TRUE)
+netflix_data <- read.csv("C:/Users/Bobby/Desktop/Netflix_Dataset/netflix_titles.csv")
 ```
 
 2. Check the data types and varaibles
