@@ -122,4 +122,3 @@ netflix_data_country_count_sorted <- netflix_data_country_count %>%
 
 ![alt text](https://github.com/databubs/Netflix-Movies-and-TV-Shows/blob/main/Release_Year.png)
 
-![alt text](https://github.com/databubs/Netflix-Movies-and-TV-Shows/blob/main/TopCountries.png)
