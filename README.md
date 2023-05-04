@@ -45,7 +45,7 @@ table(netflix$type)
 
 # Cleaning Data
 
-Lets check out our Netflix_Data collums and which ones are relevant or not.
+Lets check out our Netflix_Data column and which ones are relevant or not.
 
 ```r
 ls(netflix_data)
@@ -58,6 +58,38 @@ I will be removing "show_ID, and "description to make our anaylsis more simple t
 ```r
 netflix_data <- select(netflix_data, -show_id, -description)
 ```
+
+Removing duration and rating
+```r
+netflix_data <- select(netflix_data, -duration, -rating)
+```
+
+Everytime we remove a column we double check its gone.
+
+```r
+ ls(netflix_data)
+[1] "cast"         "country"      "date_added"   "director"    
+[5] "listed_in"    "release_year" "title"        "type"
+```
+
+We will need to group the data by release year to create a scatterplot
+
+```r
+library(dplyr)
+netflix_data_year <- netflix_data %>% group_by(release_year)
+```
+
+```r
+Plot Code:
+
+library(ggplot2)
+ggplot(netflix_data_year_count, aes(x = release_year, y = count)) +
+  geom_point() +
+  labs(x = "Release Year", y = "Number of Titles") +
+  ggtitle("Number of Netflix Titles by Release Year")
+  ```
+
+
 
 
 
