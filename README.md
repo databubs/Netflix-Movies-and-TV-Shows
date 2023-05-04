@@ -64,7 +64,7 @@ Removing duration and rating
 netflix_data <- select(netflix_data, -duration, -rating)
 ```
 
-Everytime we remove a column we double check its gone.
+Everytime we remove a column we can double check it's removed
 
 ```r
  ls(netflix_data)
@@ -90,7 +90,26 @@ ggplot(netflix_data_year_count, aes(x = release_year, y = count)) +
   ```
 
 
+Lets find the top 10 countries with MOST content
 
+Group data by country
+
+```r
+netflix_data_country <- netflix_data %>% group_by(country)
+```
+
+Summarize function to count
+
+```r
+netflix_data_country_count <- netflix_data_country %>% summarize(count = n())
+```
+
+Sorting the  data in DESC order
+
+```r
+netflix_data_country_count_sorted <- netflix_data_country_count %>% 
+  arrange(desc(count))
+```
 
 
 
