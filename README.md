@@ -1,5 +1,5 @@
 # Introduction
-Hey its Bobby and in this case study I will be focusing on visualizations briefly explaining my thought process while doing this using R Studio. You can follow me step by step :)
+Hey its Bobby and in this case study I will be focusing on visualizations briefly explaining my thought process while using R Studio. You can follow me step by step :)
 If you have any questions feel free to contact me at CHIENG@LIVE.CA
 
 ## Interesting Task Ideas - Suggestions from Kaggle
