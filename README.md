@@ -98,8 +98,6 @@ Group data by country
 netflix_data_country <- netflix_data %>% group_by(country)
 ```
 
-Summarize function to count
-
 ```r
 netflix_data_country_count <- netflix_data_country %>% summarize(count = n())
 ```
@@ -109,6 +107,16 @@ Sorting the  data in DESC order
 ```r
 netflix_data_country_count_sorted <- netflix_data_country_count %>% 
   arrange(desc(count))
+```
+
+```r
+Plot Code:
+
+library(ggplot2)
+ggplot(top_10_countries, aes(x = reorder(country, count), y = count)) +
+  geom_bar(stat = "identity", fill = "darkblue") +
+  labs(x = "Country", y = "Number of Titles") +
+  ggtitle("Top 10 Countries with Most Content on Netflix")
 ```
 
 
