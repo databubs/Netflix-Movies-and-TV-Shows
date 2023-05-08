@@ -43,7 +43,7 @@ table(netflix$type)
    6131    2676 
 ```
 
-# Cleaning Data
+# Cleaning/Process Data
 
 Lets check out our Netflix_Data column and which ones are relevant or not.
 
@@ -72,12 +72,18 @@ Everytime we remove a column we can double check it's removed
 [5] "listed_in"    "release_year" "title"        "type"
 ```
 
+We will use summarize function to count the amount of titles
+```r
+netflix_data_year_count <- netflix_data_year %>% summarize(count = n())
+```
+
 We will need to group the data by release year to create a scatterplot
 
 ```r
 library(dplyr)
 netflix_data_year <- netflix_data %>% group_by(release_year)
 ```
+
 
 ```r
 Plot Code:
