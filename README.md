@@ -138,8 +138,9 @@ ls()
 [7] "top_10_countries" 
 ```
 
-We can also repeat the process of grouping the data that we want, for example we would want genres.
-We know that genres is currently "listed_in"
+We can also repeat the process of grouping the data that we desire, for example we would want genres;
+we know that the collumn is "listed_in"
+
 ```r
 netflix_data %>%
   separate_rows(listed_in, sep = ", ") %>%
@@ -153,7 +154,7 @@ netflix_data %>%
   labs(title = "Top 10 Genres on Netflix",
        x = "Genres",
        y = "Count")
-       ```
+ ```
 
 
 # Share/Act
@@ -163,4 +164,6 @@ netflix_data %>%
 ![alt text](https://github.com/databubs/Netflix-Movies-and-TV-Shows/blob/main/Release_By_Year.png)
 
 ![alt text](https://github.com/databubs/Netflix-Movies-and-TV-Shows/blob/main/Release_Year.png)
+
+![alt text](https://github.com/databubs/Netflix-Movies-and-TV-Shows/blob/main/Top_Genres.png)
 
