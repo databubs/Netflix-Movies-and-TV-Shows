@@ -125,7 +125,35 @@ ggplot(top_10_countries, aes(x = reorder(country, count), y = count)) +
   ggtitle("Top 10 Countries with Most Content on Netflix")
 ```
 
+Lets check our dataframes now
 
+```r
+ls()
+[1] "netflix_data"                     
+[2] "netflix_data_country"             
+[3] "netflix_data_country_count"       
+[4] "netflix_data_country_count_sorted"
+[5] "netflix_data_year"                
+[6] "netflix_data_year_count"          
+[7] "top_10_countries" 
+```
+
+We can also repeat the process of grouping the data that we want, for example we would want genres.
+We know that genres is currently "listed_in"
+```r
+netflix_data %>%
+  separate_rows(listed_in, sep = ", ") %>%
+  group_by(listed_in) %>%
+  summarize(count = n()) %>%
+  arrange(desc(count)) %>%
+  head(10) %>%
+  ggplot(aes(x = reorder(listed_in, count), y = count)) +
+  geom_bar(stat = "identity", fill = "purple") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Top 10 Genres on Netflix",
+       x = "Genres",
+       y = "Count")
+       ```
 
 
 # Share/Act
